@@ -1,0 +1,65 @@
+header nav .menu {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+    background-color: pink;
+}
+
+header nav .menu li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 3px;
+}
+
+/* header nav .menu li a:hover {
+    border: 1px solid black;
+} */
+
+header nav .submenu {
+    list-style-type: none;
+    position: absolute;
+    display: none;
+    padding-left: 0;
+    z-index: 5;
+    opacity: 0;
+}
+
+header nav .menu li:hover .submenu {
+    display: block;
+
+}
+
+.submenu li {
+    position: relative;
+}
+
+nav li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu {
+    background-color: red;
+}
+
+header nav .menu li .submenu li .submenu {
+    display: none;
+    float:right;
+
+}
+
+header nav .menu li .submenu li:hover .submenu {
+    display: block;
+    float:right;
+    background-color: blueviolet;
+}
+
+.submenu .submenu {
+    left: 100%;
+}
+
+
+
